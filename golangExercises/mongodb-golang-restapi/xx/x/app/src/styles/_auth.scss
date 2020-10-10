@@ -1,0 +1,31 @@
+.auth {
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  background-color: rgb(255, 255, 255);
+  padding: 50px 10px;
+  border-radius: 30px;
+  .tog-auth {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2/3;
+    width: 100%;
+    padding: 10px 0px;
+    @include responsive(phone) {
+      grid-column: 1/4;
+    }
+    justify-items: center;
+    border-radius: 10px;
+    // background-color: #e6e9ef;
+    // box-shadow: inset -18px -18px 18px #ffffff, inset 18px 18px 18px #b9b9b9;
+    span {
+      padding: 10px 30px;
+      background-color: rgb(236, 236, 236);
+      border-radius: 30px;
+      //   box-shadow: inset -2px -2px 3px #ffffff, inset 2px 3px 3px #cfcfcf,
+      //     3px 3px 3px rgb(218, 218, 218);
+      box-shadow: 2px 2px 5px rgb(218, 217, 217), 2px 2px 5px rgb(231, 231, 231);
+      font-weight: bold;
+      color: #69ff9c;
+    }
+  }
+}

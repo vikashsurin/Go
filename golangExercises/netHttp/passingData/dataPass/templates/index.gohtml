@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>template</title>
+  </head>
+  <body>
+    <h1>From Template</h1>
+    <form  method="POST">
+     <input type="text" name="first" >
+     <input type="text" name="last" >
+     <input type="checkbox" name="subscribe" >
+     <input type="submit" value="submit">
+    </form>
+    <br>
+    <h2>First : {{.FirstName}}</h2>
+    <h2>Last : {{.LastName}}</h2>
+    <h2>Subscribed : {{.Subscribed}}</h2>
+
+  </body>
+</html>

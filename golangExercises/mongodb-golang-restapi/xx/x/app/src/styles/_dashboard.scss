@@ -1,0 +1,112 @@
+.dashboard {
+  width: 100%;
+  padding: 20px 5px;
+  // border: 1px solid;
+  box-sizing: border-box;
+  .prop-list {
+    padding: 20px 10px;
+    border-radius: 30px;
+    background-color: #eeeeee;
+    border: 3px solid white;
+    padding: 10px;
+    box-shadow: -10px -10px 10px white, 10px 10px 10px gray;
+
+    .prop-val {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      div {
+        padding: 10px 2px;
+        margin-top: 2px;
+        width: initial;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        color: black;
+      }
+      div:nth-child(1) {
+        font-weight: bold;
+        border-radius: 30px;
+        text-align: center;
+      }
+
+      div:nth-child(2) {
+        word-break: break-all;
+        border-radius: 30px;
+        text-align: center;
+        color: rgb(39, 92, 56);
+        background-color: #e0e0e0;
+        box-shadow: inset -4px -4px 5px white, inset 4px 4px 5px gray;
+      }
+    }
+  }
+  .dash-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    .dash-nav {
+      justify-self: end;
+      text-decoration: none;
+      color: white;
+      background-color: #6ebeff;
+      padding: 10px 20px;
+      border-radius: 30px 0px 0px 30px;
+    }
+    button {
+      justify-self: start;
+      border: none;
+      text-decoration: none;
+      background-color: #ff6e6e;
+      color: white;
+      font-family: inherit;
+      padding: 10px 20px;
+      border-radius: 0px 30px 30px 0px;
+    }
+  }
+
+  .post-list {
+    border-radius: 30px;
+    background-color: #eeeeee;
+    padding: 20px 10px;
+    box-shadow: -10px -10px 10px white, 10px 10px 10px gray;
+    .dash-p-lst {
+      display: grid;
+      grid-template-columns: 11fr 2fr;
+      padding: 5px 10px;
+      span {
+        display: block;
+        font-weight: bolder;
+      }
+      button {
+        border: none;
+        border-radius: 20px;
+        padding: 5px;
+        color: white;
+        background-color: #ff6e6e;
+        box-shadow: 4px 4px 4px gray, -4px -4px 4px white;
+      }
+    }
+  }
+}
+.no-profile {
+  padding-top: 20px;
+  color: red;
+  p {
+    font-size: 2rem;
+  }
+  .dash-navlink {
+    text-decoration: none;
+    color: white;
+    background-color: #6ebeff;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+  }
+}
+
+.loading {
+  background-color: lightgray;
+  div {
+    height: 20px;
+    width: 80%;
+  }
+}

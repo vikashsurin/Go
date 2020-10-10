@@ -1,0 +1,99 @@
+$base-color: hsla(0, 9%, 78%, 0.929);
+
+.pp-wrapper {
+  display: grid;
+  grid-column: 1/2;
+  margin: 10px 5px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  box-shadow: 4px 4px 20px rgba(128, 128, 128, 0.5), -4px -4px 9px white;
+  .pp-top {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 10px 5px;
+    border-radius: 20px;
+    height: 30px;
+    background-color: rgb(231, 227, 227);
+    .pp-img {
+      display: grid;
+      grid-column: 1/2;
+      height: 30px;
+      width: 30px;
+      border-radius: 100%;
+      background: $base-color;
+      animation: pulse 1s infinite ease-in-out;
+    }
+    .pp-title {
+      display: grid;
+      grid-column: 2/12;
+      padding-left: 10px;
+      div {
+        background: $base-color;
+        width: 100%;
+        border-radius: 30px;
+        animation: pulse 1s infinite ease-in-out;
+      }
+    }
+  }
+  .pp-body {
+    background-color: #fff;
+    min-height: 200px;
+    max-height: auto;
+    padding: 20px 10px;
+    div {
+      min-height: auto;
+      width: 100%;
+      min-height: 20px;
+      background-color: $base-color;
+      padding-top: 5px;
+      margin-top: 2px;
+      border-radius: 30px;
+      animation: pulse 1s infinite ease-in-out;
+    }
+    div:nth-child(2) {
+      width: 90%;
+    }
+    div:nth-child(3) {
+      width: 80%;
+    }
+    div:nth-child(5) {
+      width: 80%;
+    }
+  }
+  .pp-counts {
+    background-color: #fff;
+    padding: 5px 5px;
+    div {
+      min-height: 20px;
+      width: 100%;
+      background-color: $base-color;
+      border-radius: 30px;
+      animation: pulse 1s infinite ease-in-out;
+    }
+  }
+  .pp-buttons {
+    background-color: #fff;
+    padding: 5px 5px;
+    div {
+      background-color: $base-color;
+      border-radius: 30px;
+      padding: 5px 5px;
+      min-height: 20px;
+      width: 90%;
+      animation: pulse 1s infinite ease-in-out;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-color: hsla(0, 9%, 78%, 0.1);
+  }
+  50% {
+    background-color: hsla(0, 1%, 73%, 0.3);
+  }
+  100% {
+    background-color: hsla(0, 9%, 78%, 0.1);
+  }
+}

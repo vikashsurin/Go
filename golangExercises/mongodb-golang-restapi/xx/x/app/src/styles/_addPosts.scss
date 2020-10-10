@@ -1,0 +1,32 @@
+.addpost {
+  @include responsive(phone) {
+    width: 100%;
+    grid-column: 1/8;
+  }
+
+  width: 100%;
+  grid-column: 3/6;
+  grid-row: auto;
+  background-color: #bacbf6;
+
+  input {
+    width: 100%;
+    border: none;
+    font-size: 2rem;
+  }
+  textarea {
+    border: none;
+    width: 100%;
+    text-decoration: none;
+    min-height: 100px;
+    height: auto;
+  }
+  button {
+    color: white;
+    background-color: #69ff9c;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+}

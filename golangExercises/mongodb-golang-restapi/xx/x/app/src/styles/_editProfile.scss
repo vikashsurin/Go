@@ -1,0 +1,43 @@
+.edit-profile-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  box-sizing: border-box;
+  padding: 10px;
+  .edit-profile {
+    display: grid;
+    grid-column: 2/3;
+    grid-row-gap: 10px;
+    @include responsive(phone) {
+      grid-column: 1/4;
+    }
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    padding: 40px 40px;
+    text-align: center;
+    box-shadow: -18px -18px 40px white, 18px 18px 40px gray;
+
+    select {
+      border: none;
+      background-color: rgb(168, 248, 211);
+      padding: 15px;
+      font-size: 1rem;
+      border-radius: 30px;
+    }
+    input {
+      border: none;
+      padding: 15px;
+      border-radius: 30px;
+      background-color: #f5f5f5;
+      box-shadow: inset -4px -4px 9px white, inset 3px 3px 5px gray;
+    }
+    button {
+      border: none;
+      padding: 20px;
+      background-color: rgb(105, 233, 255);
+      color: white;
+      font-size: 0.8rem;
+      border-radius: 30px;
+      box-shadow: -4px -4px 9px white, 4px 4px 9px gray;
+    }
+  }
+}

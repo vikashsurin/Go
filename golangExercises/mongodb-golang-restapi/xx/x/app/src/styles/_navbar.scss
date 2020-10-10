@@ -1,0 +1,22 @@
+.navbar {
+  color: white;
+  display: grid;
+  border-radius: 20px;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 5px;
+  padding: 5px;
+  .navlink {
+    color: rgb(255, 255, 255);
+    background-color: rgb(220, 222, 226);
+    padding: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bolder;
+    box-shadow: -4px -4px 4px rgba(255, 255, 255,1), 4px 4px 4px rgba(0, 0, 0, 0.281);
+  }
+  .navlink:hover {
+    background-color: rgb(134, 134, 134);
+    color: whitesmoke;
+  }
+}

@@ -1,0 +1,37 @@
+.landing {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-auto-rows: auto;
+  border-radius: 1.5rem;
+  padding: 10px 0px;
+  background: linear-gradient(180deg, #5d5af5 0%, #4df7d8 100%);
+  div {
+    grid-column: 2/3;
+    color: white;
+    padding: 20px 10px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: -5px -5px 5px 0 rgba(129, 120, 212, 0.212),
+      5px 5px 5px 0 rgba(46, 38, 73, 0.4);
+    @include responsive(phone) {
+      grid-column: 1/4;
+    }
+    span:nth-child(1) {
+      font-size: 1.5rem;
+      color: rgb(128, 15, 15);
+      font-weight: bolder;
+    }
+    span:nth-child(2) {
+      font-size: 1.2rem;
+    }
+  }
+  .footer {
+    border: 6px solid white;
+    min-height: 300px;
+    align-items: center;
+    justify-items: center;
+    background-color: #f7f7f7;
+    box-shadow: -10px -10px 10px rgba(179, 255, 245, 0.514),
+      10px 10px 4px rgba(80, 79, 79, 0.527);
+  }
+}

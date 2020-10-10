@@ -1,0 +1,7 @@
+.main-body {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+}
